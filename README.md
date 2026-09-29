@@ -1,3 +1,10 @@
 # SET23
-Eksamens oppgave i Software Engineering og testing
-Prosjeket går ut på å utvikle ett nytt system for Østfold Husflidslag 
+Prosjeket går ut på å utvikle en ny nettside og system for Østfold Husflidslag sine nettsider.
+# Team
+Product-owner: Jan-Cato
+Scrum-master: Knut-Erik
+Utviklingsteam: Leander, Marlen og David
+# Installasjon
+(Kommer senere.)
+# Kjøring
+(Kommer senere.)
