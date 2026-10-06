@@ -1,77 +1,27 @@
-import { useState } from 'react';
-import './App.css';
-import './kurs.jsx';
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './components/Home'
+import './App.css'
 
-<head>
-  <title>Østfold Husflidslag</title>
-</head>
+function App() {
+  return (
+    <Routes>
+      {/* Layout er rammen (header + nav) rundt alle sidene */}
+      <Route path="/" element={<Layout />}>
+        {/* index = siden som vises på "/" */}
+        <Route index element={<Home />} />
 
-export default function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [aktivSide,setAktivSide] = useState('Hjem');
+        {/* Tomme sider, bare en overskrift så man kan klikke seg rundt */}
+        <Route path="kurs" element={<h1>Kurs</h1>} />
+        <Route path="aktiviteter" element={<h1>Aktiviteter</h1>} />
+        <Route path="kontakt" element={<h1>Kontakt oss</h1>} />
+        <Route path="lokallag" element={<h1>Finn Lokallag</h1>} />
 
-return (
-    <div className="site-wrapper">
-      <header className="main-header">
-          <div className="brand">
-            <div className="brand-text">
-              <strong>Østfold</strong>
-              <span>Husflidslag</span>
-            </div>
-          </div>
-
-    <button 
-    className="mobile-toggle"
-    onClick={()=> setMenuOpen(!menuOpen)}
-    aria-label="Meny">
-    </button>
-
-   <nav className={`main-nav ${menuOpen ? 'active' : ''}`}>
-      <button onClick={() => setAktivSide('Hjem')}>Hjem</button>
-      <button onClick={() => setAktivSide('Kurs')}>Kurs</button>
-      <button onClick={() => setAktivSide('Lokallag')}>Lokallag</button>
-      <button onClick={() => setAktivSide('Aktiviteter')}>Aktiviteter</button>
-      <button onClick={() => setAktivSide('Kontakt')}>Kontakt oss</button>
-    </nav>
-      </header>
-
-  <section className="hero-section">
-    <div className="overlay">
-      <h1>Velkommen til Østfold Husflidslag</h1>
-    </div>
-  </section>
-
-    <main className="main-container">
-      {aktivSide === 'Hjem' && (
-        <div>
-      <h2 className="section-title">Hva ønsker du å finne i dag?</h2>
-      </div>
-      )}
-      <div className="cards-grid">
-        <div className="card">
-          <h3>Kurs</h3>
-          <p>Se alle våre kurs i strikk, vev og broderi. Vi har kurs for alle nivåer.</p>
-        </div>
-      </div>
-        
-      <div className="card">
-        <h3>Lokallag</h3>
-        <p>Finn ditt lokale husflidslag</p>
-      </div>
-
-        <div className="card">
-        <h3>Aktiviteter</h3>
-        <p>Se alle våre aktiviteter</p>
-      </div>
-
-      <div className="card">
-        <h3>Kontakt oss</h3>
-        <p>Kontakt oss gjerne om du lurer på noe!</p>
-      </div>
-      </main>
-      <footer className="footer">
-        <p>Østfold Husflidslag</p>
-      </footer>
-    </div>
-  );
+        {/* "*" fanger opp alle adresser som ikke finnes */}
+        <Route path="*" element={<h1>Siden finnes ikke</h1>} />
+      </Route>
+    </Routes>
+  )
 }
+
+export default App
