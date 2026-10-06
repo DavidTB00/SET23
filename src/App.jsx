@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
+import Kurs from './components/Kurs'
 import './App.css'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Route index element={<Home />} />
 
         {/* Tomme sider, bare en overskrift så man kan klikke seg rundt */}
-        <Route path="kurs" element={<h1>Kurs</h1>} />
+        <Route path="kurs" element={<Kurs />} />
         <Route path="aktiviteter" element={<h1>Aktiviteter</h1>} />
         <Route path="kontakt" element={<h1>Kontakt oss</h1>} />
         <Route path="lokallag" element={<h1>Finn Lokallag</h1>} />

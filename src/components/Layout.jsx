@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import './Layout.css'
-=======
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Nav from './Nav'
@@ -22,4 +19,3 @@ function Layout() {
 }
 
 export default Layout
->>>>>>> 6785b471015811f900fbbb548e7b16081facac19
