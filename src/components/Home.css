@@ -32,6 +32,9 @@
     background: white;
     color: #000;
 }
+.finder h2 {
+    color: black;
+}
 
 /* Overskrift med rød strek under */
 .title {
