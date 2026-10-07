@@ -1,0 +1,91 @@
+/* Container for selve siden */
+.kurs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  color: var(--text);
+  font-family: var(--sans);
+}
+
+/* Tydelig overskrift */
+.kurs-header h1 {
+  font-size: 3rem; 
+  color: var(--text-h);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Lager god plass til hvert kort */
+.kurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  gap: 2.5rem; 
+}
+
+/* Hver enkelt kort */
+.kurs-kort {
+  background-color: var(--bg);
+  border: 2px solid var(--border); 
+  border-radius: 16px;
+  padding: 2.5rem; 
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+
+/* Tittel på kurset */
+.kurs-tittel {
+  font-size: 2rem; 
+  color: var(--text-h);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* beskrivelsen */
+.kurs-beskrivelse {
+  font-size: 1.25rem; 
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 1.8rem;
+}
+
+/* Detaljeliste */
+.kurs-detaljer {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kurs-detaljer p {
+  font-size: 1.2rem; 
+  margin: 0.8rem 0;
+  color: var(--text);
+}
+
+.kurs-detaljer strong {
+  color: var(--text-h);
+  font-size: 1.25rem;
+}
+
+/* Legger til en stor og tydelig knapp */
+.kurs-knapp {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+.kurs-knapp:hover {
+  filter: brightness(1.15);
+  transform: scale(1.02);
+}
