@@ -4,8 +4,10 @@
   min-height: 420px;
   display: flex;
   align-items: center;  /* sentrerer teksten vertikalt */
+  justify-content: center;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 /* Lys hvit hinne over bildet, slik at teksten er lett å lese */
@@ -29,44 +31,81 @@
 .finder { 
     padding: 3rem 1rem 4rem; 
     text-align: center; 
-    background: white;
-    color: #000;
+    background-color: var(--bg, #ffffff);
+    color: var(--text-h, #08060d);
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+  color: var(--text-h, #08060d);
 }
 
 /* Overskrift med rød strek under */
-.title {
-  display: inline-block;   /* boksen blir bare så bred som teksten */
-  position: relative; 
-  font-size: 2rem;
-  font-weight: 400;
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: var(--accent);
+  border-radius: 3px;
 }
+
 /* Rutenett for kortene */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 5rem;
-  max-width: 800px;
+  gap: 3rem;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 /* Ett kort */
 .card {
+  background-color: var(--bg);
+  border: 2px solid var(--border); 
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem; 
+  text-align: left; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2.5rem;
-  min-height: 340px;
-  padding: 2rem;
-  border: 1px solid #000;
-  border-radius: 8px;
-  color: inherit;
-  text-decoration: none;
-  text-align: left;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  box-shadow: var(--shadow);
+  text-decoration: none; /* fjerner understrek på link*/
+}
+
+.card h3 {
+  position: relative;
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text-h);
+}
+
+.card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent);
+  border-radius: 2px;
 }
 
 
 .card p {
-    font-size: 1.2rem;
-    line-height: 1.1; 
-    color: black; 
+  margin-top: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.5; 
+  color: var(--text); /* Bruker lys farge i dark-mode og mørk farge i light-mode */
 }

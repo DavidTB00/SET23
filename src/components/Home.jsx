@@ -20,13 +20,13 @@ function Home() {
         <div className="cards">
           {/* Kort 1. Hele kortet er en lenke */}
           <Link to="/kurs" className="card">
-            <h3 className="title title--full">Kurs</h3>
+            <h3>Kurs</h3>
             <p>Se alle våre kurs i strikk, vev og broderi og mer. Vi har kurs til alle nivåer</p>
           </Link>
 
           {/* Kort 2 */}
           <Link to="/lokallag" className="card">
-            <h3 className="title title--full">Finn Lokallag</h3>
+            <h3>Finn Lokallag</h3>
             <p>Finn lokallaget du tilhører!</p>
           </Link>
         </div>
