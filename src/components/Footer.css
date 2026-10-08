@@ -1,0 +1,13 @@
+/* Footer styling */
+.footer {
+    min-height: 300px;
+    padding: 2rem 3rem;
+    background-color: gray;
+    color: black;
+}
+
+.footerTitle {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
