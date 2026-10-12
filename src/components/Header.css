@@ -13,62 +13,62 @@
     text-decoration: none; }
 
 /* Logo + tekst */
-.header__brand { 
+.headerPicture { 
     display: flex; 
     align-items: center; 
     gap: 0.75rem; 
     line-height: 1.2; }
 
-.header__brand img { 
+.headerPicture img { 
     height: 80px; }
 
 /* Midtdelen. margin-right: auto dytter boksen til høyre helt ut */
-.header__nav { 
+.headerNav { 
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-right: auto;
 }
-.header__nav a:hover {
+.headerNav a:hover {
     text-decoration: underline;
 }
-.header__nav a.active { 
+.headerNav a.active { 
     font-weight: 600; }   /* siden man er på */
 
 /* Meny-knappen: fjerner standard knappestil så den ser ut som vanlig tekst */
-.header__menu {
+.headerMenu {
     background: none;
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
     color: inherit;   /* samme farge som resten av teksten */
 }
-.header__menu:hover { 
+.headerMenu:hover { 
     text-decoration: underline; 
 }
 
 /* Den røde "Bli medlem"-knappen */
-.header__nav .header__cta {
+.headerNav .headerButton {
     background: #b9294d;
     color: #fff;
     padding: 1rem 2rem;
     font-weight: 600;
     font-size: 1.1rem;
 }
-.header__nav .header__cta:hover { text-decoration: none; filter: brightness(0.9); }
+.headerNav .headerButton:hover { text-decoration: none; filter: brightness(0.9); }
 
 /* Grå boks til høyre med tekstlenker ved siden av hverandre */
-.header__tools {
+.headerLinks {
     display: flex;
     gap: 1.25rem;
     padding: 0.75rem 1rem;
     background: #f2f2f2;
 }
-.header__tools a { 
+.headerLinks a { 
     font-size: 0.9rem; 
     font-weight: 600; 
 }
 
-.header__tools a:hover { 
+.headerLinks a:hover { 
     text-decoration: underline; 
 }

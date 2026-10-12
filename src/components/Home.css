@@ -43,6 +43,9 @@
   margin-bottom: 3.5rem;
   color: var(--text-h, #08060d);
 }
+.finder h2 {
+    color: black;
+}
 
 /* Overskrift med rød strek under */
 .title::after {
