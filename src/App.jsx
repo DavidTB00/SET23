@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
 import Kurs from './components/Kurs'
+import Kontakt from './components/Kontakt'
 import './App.css'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         {/* Tomme sider, bare en overskrift så man kan klikke seg rundt */}
         <Route path="kurs" element={<Kurs />} />
         <Route path="aktiviteter" element={<h1>Aktiviteter</h1>} />
-        <Route path="kontakt" element={<h1>Kontakt oss</h1>} />
+        <Route path="kontakt" element={<Kontakt />} />
         <Route path="lokallag" element={<h1>Finn Lokallag</h1>} />
 
         {/* "*" fanger opp alle adresser som ikke finnes */}
