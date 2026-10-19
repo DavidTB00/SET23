@@ -29,6 +29,18 @@ function Home() {
             <h3>Finn Lokallag</h3>
             <p>Finn lokallaget du tilhører!</p>
           </Link>
+
+          {/* Kort 3 */}
+           <Link to="/aktiviteter" className="card">
+            <h3>Aktiviteter</h3>
+            <p>Se alle våre aktiviteter. Alle er velkomne!</p>
+          </Link>
+
+          {/* Kort 4 */}
+           <Link to="/nyheter" className="card">
+            <h3>Nyheter og artikler</h3>
+            <p>Her oppdaterer vi om siste nytt og nyttige artikler</p>
+          </Link>
         </div>
       </section>
     </main>

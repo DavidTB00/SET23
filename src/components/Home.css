@@ -44,7 +44,7 @@
   color: var(--text-h, #08060d);
 }
 .finder h2 {
-    color: black;
+    color: var(--text-h);
 }
 
 /* Overskrift med rød strek under */
