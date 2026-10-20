@@ -1,0 +1,156 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-innhold {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 40px;
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.lukk-knapp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--text-h);
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+}
+
+.lukk-knapp:hover {
+  color: var(--accent);
+}
+
+.modal-header h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 32px;
+  margin: 0 0 8px 0;
+}
+
+.kurs-tittel-info {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.pamelding-skjema {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skjema-gruppe {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.skjema-gruppe label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-h);
+}
+
+.skjema-gruppe input,
+.skjema-gruppe select,
+.skjema-gruppe textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--code-bg);
+  color: var(--text-h);
+  font-size: 18px;
+  font-family: var(--sans);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.skjema-gruppe input:focus,
+.skjema-gruppe select:focus,
+.skjema-gruppe textarea:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.skjema-knapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.pamelding-submit-btn {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.pamelding-submit-btn:hover {
+  opacity: 0.9;
+}
+
+.pamelding-avbryt-btn {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pamelding-avbryt-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.suksess-melding {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.suksess-melding h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.suksess-melding p {
+  color: var(--text);
+  font-size: 18px;
+  margin-bottom: 16px;
+}

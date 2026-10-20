@@ -15,7 +15,9 @@ function Nav() {
       <nav className="navLinks">
         <NavLink to="/kurs">Kurs</NavLink>
         <NavLink to="/aktiviteter">Aktiviteter</NavLink>
+        <NavLink to="/nyheter">Nyheter</NavLink>
         <NavLink to="/kontakt">Kontakt oss</NavLink>
+        
       </nav>
     </div>
   )
