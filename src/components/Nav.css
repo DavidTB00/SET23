@@ -31,7 +31,8 @@
      font-size: 1.4rem; 
     }
 .navLinks a {
-     color: #ddd; }   /* litt dempet farge som standard */
+     color: #ddd; 
+     }   /* litt dempet farge som standard */
 
 
 .navLinks a:hover,
@@ -39,3 +40,24 @@
      color: #fff; /* Hvit og understrek på hover og på siden man er på */
      text-decoration: underline; }
 
+/* Responsivt view */
+@media (max-width: 900px) {
+     .navLinks {
+          gap: 2rem;
+          margin-right: 0;
+     }
+}
+
+@media (max-width: 700px) {
+     .nav {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          padding: 0.75rem;
+     }
+     .navLinks {
+          width: 100%;
+          justify-content: space-between;
+          gap: 0.5rem;
+          font-size: 1rem;
+     }
+}

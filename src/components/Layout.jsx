@@ -1,14 +1,10 @@
 import { Outlet } from 'react-router-dom'
-import Header from './Header'
 import Nav from './Nav'
 import Footer from './Footer'
 
 function Layout() {
   return (
     <>
-      {/* Hvit header: scroller bort som vanlig */}
-      <Header />
-
       {/* Svart nav: sticky. Må ligge som søsken til Header, ikke inni den,
           ellers har den ikke noe å "feste seg" mot når man scroller */}
       <Nav />

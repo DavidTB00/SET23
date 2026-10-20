@@ -98,3 +98,23 @@
 .kontakt-knapp:hover {
   background-color: #c03b52;
 }
+/* Responsivt view */
+@media (max-width: 900px) {
+  .lokallag-grid { 
+    grid-template-columns: 1fr; 
+    }
+}
+@media (max-width: 600px) {
+  .lokallag-container { 
+    padding: 30px 16px; 
+  }
+  .lokallag-header h1 { 
+    font-size: 32px; 
+  }
+  .lokallag-header p { 
+    font-size: 17px; 
+  }
+  .lokallag-kort { 
+    padding: 20px; 
+  }
+}

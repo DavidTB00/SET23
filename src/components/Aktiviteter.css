@@ -176,8 +176,16 @@
   padding: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .aktiviteter-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .aktiviteter-header h1 {
+    font-size: 32px;
+  }
+  .aktivitet-kort-innhold {
+    padding: 20px;
   }
 }

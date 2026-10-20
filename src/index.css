@@ -1,3 +1,17 @@
+:root {
+  --text: #555;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #d0d0d0;
+  --code-bg: #f4f3ec;
+  --accent: #b9294d;
+  --accent-bg: rgba(185, 41, 77, 0.1);
+  --accent-border: rgba(185, 41, 77, 0.5);
+  --shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  --sans: system-ui, 'Segoe UI', Arial, sans-serif;
+  --heading: system-ui, 'Segoe UI', Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
