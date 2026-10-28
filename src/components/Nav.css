@@ -6,8 +6,8 @@
      align-items: center;
      justify-content: space-between;   /* logo til venstre, lenker til høyre */
      padding: 1rem;
-     background: #000;
-     color: #fff;
+     background: #fff;
+     color: #000;
 }
 .nav a {
      color: inherit;
@@ -31,13 +31,13 @@
      font-size: 1.4rem; 
     }
 .navLinks a {
-     color: #ddd; 
+     color: #000; 
      }   /* litt dempet farge som standard */
 
 
 .navLinks a:hover,
 .navLinks a.active {
-     color: #fff; /* Hvit og understrek på hover og på siden man er på */
+     color: #b9294d; /* Rød og understrek på hover og på siden man er på */
      text-decoration: underline; }
 
 /* Responsivt view */
