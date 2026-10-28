@@ -31,7 +31,7 @@
 .finder { 
     padding: 3rem 1rem 4rem; 
     text-align: center; 
-    background-color: var(--bg, #ffffff);
+    background-color: #F7F7F7;
     color: var(--text-h, #08060d);
 }
 
