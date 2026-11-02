@@ -31,7 +31,7 @@
 .finder { 
     padding: 3rem 1rem 4rem; 
     text-align: center; 
-    background-color: var(--bg, #ffffff);
+    background-color: #F7F7F7;
     color: var(--text-h, #08060d);
 }
 
@@ -44,7 +44,7 @@
   color: var(--text-h, #08060d);
 }
 .finder h2 {
-    color: black;
+    color: var(--text-h);
 }
 
 /* Overskrift med rød strek under */
@@ -111,4 +111,26 @@
   font-size: 1.25rem;
   line-height: 1.5; 
   color: var(--text); /* Bruker lys farge i dark-mode og mørk farge i light-mode */
+}
+
+/* responsivt view */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 280px;
+    padding: 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .cards {
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 2rem 1.5rem;
+  }
 }

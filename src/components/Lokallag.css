@@ -1,0 +1,120 @@
+.lokallag-container {
+  max-width: 1300px; /* Gjør hele containeren litt bredere */
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.lokallag-header {
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #2d2d2d;
+  padding-bottom: 30px;
+}
+
+.lokallag-header h1 {
+  color: #ffffff;
+  font-size: 48px; /* Større overskrift */
+  margin-bottom: 16px;
+}
+
+.lokallag-header p {
+  color: #b0b0b0;
+  font-size: 20px; /* Større undertekst */
+}
+
+.lokallag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Større minimumsbredde på kortene */
+  gap: 30px; /* God luft mellom kortene */
+}
+
+.lokallag-kort {
+  background-color: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  padding: 32px; /* Mer luft på innsiden av kortet */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.lokallag-kort:hover {
+  transform: translateY(-4px);
+  border-color: #d84a62;
+}
+
+.lokallag-kort h2 {
+  color: #ffffff;
+  font-size: 26px; /* Større tittel på lokallaget */
+  margin-bottom: 14px;
+  border-bottom: 2px solid #d84a62;
+  padding-bottom: 10px;
+}
+
+.lag-beskrivelse {
+  color: #cccccc;
+  font-size: 17px; /* Større brødtekst */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.lag-detaljer {
+  background-color: #242424;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.lag-detaljer p {
+  color: #dddddd;
+  font-size: 16px; /* Større skrift på kontaktinfo */
+  margin-bottom: 8px;
+}
+
+.lag-detaljer p:last-child {
+  margin-bottom: 0;
+}
+
+.lag-knapper {
+  text-align: center;
+}
+
+.kontakt-knapp {
+  display: inline-block;
+  background-color: #d84a62;
+  color: white;
+  padding: 14px 24px; /* Større og mer trykkvennlig knapp */
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+.kontakt-knapp:hover {
+  background-color: #c03b52;
+}
+/* Responsivt view */
+@media (max-width: 900px) {
+  .lokallag-grid { 
+    grid-template-columns: 1fr; 
+    }
+}
+@media (max-width: 600px) {
+  .lokallag-container { 
+    padding: 30px 16px; 
+  }
+  .lokallag-header h1 { 
+    font-size: 32px; 
+  }
+  .lokallag-header p { 
+    font-size: 17px; 
+  }
+  .lokallag-kort { 
+    padding: 20px; 
+  }
+}
