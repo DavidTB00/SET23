@@ -1,2 +1,15 @@
+# Miljøvariabler og passord
 .env
-node_modules
+.env.*
+
+# Frontend
+node_modules/
+dist/
+
+# Java / Maven
+target/
+*.class
+
+# IntelliJ
+.idea/
+*.iml
