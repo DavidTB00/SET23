@@ -1,0 +1,198 @@
+.admin-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.admin-container h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 36px; 
+  margin-bottom: 8px;
+}
+
+.admin-undertittel {
+  color: var(--text);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Fane-menyen øverst */
+.admin-tab {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 20px;
+}
+
+.tab-knapp {
+  padding: 14px 22px;
+  background-color: var(--code-bg);
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.tab-knapp:hover {
+  background-color: var(--accent-bg);
+  color: var(--accent);
+}
+
+.tab-knapp.aktiv {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Skjemaer */
+.admin-skjema {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.admin-skjema h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin-bottom: 5px;
+  font-size: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.skjema-gruppe {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.skjema-gruppe label {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 18px; 
+  color: var(--text-h);
+}
+
+.skjema-gruppe input,
+.skjema-gruppe textarea,
+.skjema-gruppe select {
+  padding: 16px 18px; 
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 18px; 
+  background-color: var(--bg);
+  color: var(--text-h);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.skjema-gruppe input:focus,
+.skjema-gruppe textarea:focus,
+.skjema-gruppe select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-bg);
+}
+
+.skjema-rad {
+  display: flex;
+  gap: 20px;
+}
+
+.skjema-rad .skjema-gruppe {
+  flex: 1;
+}
+
+/* Bilde-rader */
+.bilde-rad {
+  margin-bottom: 10px;
+}
+
+.bilde-rad input {
+  width: 100%;
+}
+
+/* Knapper */
+.knapp-hoved {
+  padding: 16px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 18px; 
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.knapp-hoved:hover {
+  opacity: 0.9;
+}
+
+.knapp-sekundær {
+  padding: 12px 16px;
+  background-color: var(--social-bg);
+  color: var(--accent);
+  border: 2px dashed var(--accent-border);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  width: fit-content;
+}
+
+.knapp-sekundær:hover {
+  background-color: var(--accent-bg);
+}
+
+/* Slett-knapp for kontaktpersoner */
+.knapp-slett {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.knapp-slett:hover {
+  opacity: 0.85;
+}
+
+/* Suksessmelding */
+.suksess-melding {
+  padding: 16px 20px;
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  border: 2px solid var(--accent-border);
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 18px; 
+  font-weight: 600;
+  text-align: center;
+}
