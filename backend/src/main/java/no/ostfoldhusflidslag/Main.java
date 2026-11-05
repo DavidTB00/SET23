@@ -25,6 +25,14 @@ public class Main {
         KursController kursController = new KursController(kursService);
 
         Javalin app = Javalin.create(config -> {
+
+            // Tillat forespørsler fra React under lokal utvikling
+            config.bundledPlugins.enableCors(cors -> {
+                cors.addRule(rule -> {
+                    rule.allowHost("http://localhost:5173");
+                });
+            });
+
             kursController.registerRoutes(config);
         });
 
