@@ -1,5 +1,9 @@
 package no.ostfoldhusflidslag.config;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.io.IOException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,6 +24,13 @@ public class DatabaseConnection {
             return DriverManager.getConnection(url, user, password);
 
         } else if (DB_TYPE.equalsIgnoreCase("h2")) {
+
+            // Opprett data-mappen automatisk hvis den mangler
+            try {
+                Files.createDirectories(Path.of("./data"));
+            } catch (IOException e) {
+                throw new SQLException("Kunne ikke opprette data-mappen", e);
+            }
 
             String url = "jdbc:h2:file:./data/ostfold_husflidslag";
             String user = "sa";
