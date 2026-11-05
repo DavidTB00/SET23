@@ -1,2 +1,19 @@
+# Miljøvariabler
 .env
-node_modules
+.env.*
+
+# Frontend
+node_modules/
+dist/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Java / Maven
+target/
+*.class
+
+# Lokale databasefiler (H2)
+*.mv.db
+*.trace.db
