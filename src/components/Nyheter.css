@@ -237,7 +237,7 @@
   border-top: 1px solid var(--border);
   padding-top: 24px;
 }
-
+/*Responsivt view*/
 @media (max-width: 600px) {
   .nyheter-grid {
     grid-template-columns: 1fr;
@@ -249,5 +249,10 @@
 
   .artikkel-header h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .nyheter-grid {
+    grid-template-columns: 1fr;
   }
 }

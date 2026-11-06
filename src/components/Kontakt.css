@@ -239,3 +239,18 @@
   border: 1px solid var(--border); 
   border-radius: 6px; cursor: pointer; 
 }
+/* Responsivt view */
+@media (max-width: 700px) {
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+  }
+  .skjema-grid {
+    grid-template-columns: 1fr;
+  }
+  .kontakt-header h1 {
+    font-size: 32px;
+  }
+  .kort-topp, .kontakt-knapper {
+    flex-wrap: wrap;
+  }
+}
