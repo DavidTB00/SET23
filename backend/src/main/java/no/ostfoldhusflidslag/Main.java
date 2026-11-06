@@ -18,6 +18,7 @@ public class Main {
             DatabaseInitializer.initialize();
         }
 
+
         KursRepository repository = new MySqlKursRepository();
 
         KursService kursService = new KursService(repository);
