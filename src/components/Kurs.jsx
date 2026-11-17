@@ -2,11 +2,14 @@ import { useState } from 'react';
 import PåmeldingSkjema from './PåmeldingSkjema';
 import './Kurs.css';
 
+//Kobling til backend
+//const API_URL = 'http://localhost:7070/api/kurs';
+
 function Kurs() {
   const [valgtKursForPamelding, setValgtKursForPamelding] = useState(null);
   const [valgtLokallag, setValgtLokallag] = useState('alle');
   const [sokTekst, setSokTekst] = useState('');
-
+// Henting av data
   const [kursListe] = useState([
     {
       id: 1,
