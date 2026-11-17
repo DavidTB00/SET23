@@ -1,0 +1,33 @@
+.btn-login, 
+.btn-bytt-rolle, 
+.btn-logg-ut {
+  background-color: var(--bg);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-login:hover, 
+.btn-bytt-rolle:hover, 
+.btn-logg-ut:hover {
+  border-color: var(--accent);
+  background-color: var(--accent-bg);
+  color: var(--accent);
+}
+
+.btn-login {
+  background-color: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+  background-color: var(--accent);
+  color: #fff;
+}

@@ -1,24 +1,43 @@
 :root {
-  --text: #555;
+  --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #d0d0d0;
+  --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #b9294d;
-  --accent-bg: rgba(185, 41, 77, 0.1);
-  --accent-border: rgba(185, 41, 77, 0.5);
-  --shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  --sans: system-ui, 'Segoe UI', Arial, sans-serif;
-  --heading: system-ui, 'Segoe UI', Arial, sans-serif;
+  --accent: #C32D4A;
+  --accent-bg: rgba(195, 45, 74, 0.1);
+  --accent-border: rgba(195, 45, 74, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: 'Breuer Text', Arial, sans-serif;
+  --heading: 'Breuer', Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, 'Segoe UI', Arial, sans-serif;
-  background: white;
-  color: black;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #85878a;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #E55B75;
+    --accent-bg: rgba(229, 91, 117, 0.15);
+    --accent-border: rgba(229, 91, 117, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
 }
